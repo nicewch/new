@@ -2,9 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38182dda-038b-4a1c-b4a2-485fc8614edc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/handle_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/handle_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/handle_log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/entries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/0f/0f1a700f4e3e359e3f454d32555dbcc58ced7baf.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/1e/1e3be505474ac2e19323f08d1a2e819fa217df6f.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/2d/2da56e67815f37aab32acc60f546a405b92097ca.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/44/44b663f149b0c404535975f321843b5db9ff826a.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/45/45f395000078b0a2f958f5ca2134d7b62c9bb851.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/46/460b852ecd0289d1f29be3d7700dd75ee262dbf9.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/48/48e9cd3b7201b9c410c710d3d178216bbad6656d.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/48/48ef22c870b54d028b6498b0f9f6ef0b3fffcdd0.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/4c/4c1b257bd772b3ee4b8b6851efb89aa7a912d45c.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/4e/4e5509af58f043e15163a976b1e3a207c005196b.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/4f/4f6f9b8a1fbc9aaf8a6231488a79fe1fb82db8ec.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/53/53555178478b5f84ca08279ea69f06417382584b.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/57/5700317f2e37ddac1214998381ae9756909ee883.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/5b/5ba1a55282d9fb6e7a061cb9f6f4e6dfb008ba41.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/64/642ec54313d011cba213e1823f7d1c7b147c4f4d.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/65/658b5bfb868fb302f169bda3aaccae10a82f86fb.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/6f/6ffb4b83669bb77882a4c05f1abaa307eeec2c0d.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/71/7175f5827a51c2775bcf2c36a20da41721b39e26.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/7b/7bc2267bb67b204cc1b878ff812fa26c7e9b84af.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/7c/7ca54a06bf233c4fed8f9f2b3b1da9506b7a6ef6.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/a0/a033a528b603fed46f861d4b3542c417b99d41c8.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/a4/a47fe76917ff2d1d5c53be80dbb16c3fd5a920da.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/a6/a6348ff35b2b5b9a8cda23864a98a43c961e3f2a.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/ad/ada7e30e2a989bd53ca5b6d59844124a560bacdd.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/bd/bd823cb5c2578edb5f40f411154e1b43356e6056.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/be/bedac513f8396b860e63ffc46038df2878fc181b.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/c1/c1f2c1228185d70c2dda048e468d19a4b01eb0db.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/cb/cb227e52782154e4f128230ccbc7b04cb9e8efdb.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/ec/eca0a838948079c50e747f7dbc768c4bcaaffbc2.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/pristine/f7/f7d9fd99dbde720815c570901485c22c71728bd2.svn-base" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/wc.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.svn/wc.db-journal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conf/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Conf/config.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestCase/Test_registe.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
@@ -33,6 +67,27 @@
               <folding>
                 <element signature="e#102#117#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Common/handle_db.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+              <folding>
+                <element signature="e#165#179#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/笔记/mysql数据库操作.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -50,6 +105,9 @@
     <findStrings>
       <find>root</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -77,22 +135,24 @@
         <option value="$PROJECT_DIR$/Common/my_logger.py" />
         <option value="$PROJECT_DIR$/Common/logging.py" />
         <option value="$PROJECT_DIR$/Common/handle_path.py" />
-        <option value="$PROJECT_DIR$/Conf/config.ini" />
         <option value="$PROJECT_DIR$/Common/handle_config.py" />
         <option value="$PROJECT_DIR$/Common/handle_request.py" />
         <option value="$PROJECT_DIR$/Common/handle_log.py" />
         <option value="$PROJECT_DIR$/Common/handle_requests.py" />
         <option value="$PROJECT_DIR$/TestCase/Test_registe.py" />
+        <option value="$PROJECT_DIR$/Conf/config.ini" />
+        <option value="$PROJECT_DIR$/Common/handle_db.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="91" />
-    <option name="y" value="29" />
+    <option name="x" value="242" />
+    <option name="y" value="52" />
     <option name="width" value="1578" />
     <option name="height" value="956" />
   </component>
   <component name="ProjectId" id="22dF55LyMIw4gU3sfKmbZwtuoJm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -114,7 +174,12 @@
             <path>
               <item name="api" type="b2602c69:ProjectViewProjectNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
+              <item name="Conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="笔记" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -140,6 +205,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\api\笔记" />
       <recent name="C:\Users\Administrator\Desktop\api\Common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -310,7 +376,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="91" y="29" width="1578" height="956" extended-state="0" />
+    <frame x="242" y="52" width="1578" height="956" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1840731" />
@@ -333,8 +399,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/BaiduNetdiskDownload/lemon班python30期代码资料/0-python编程技术/py30_20200603_第15-16节_引入模块+路径处理+异常捕获处理/py30/py_module/异常处理.py" />
-    <entry file="file://F:/BaiduNetdiskDownload/lemon班python30期代码资料/0-python编程技术/py30_20200603_第15-16节_引入模块+路径处理+异常捕获处理/py30/py_module/作业思路讲解.py" />
     <entry file="file://F:/BaiduNetdiskDownload/lemon班python30期代码资料/0-python编程技术/py30_20200605_第17-18节-类和对象定义+实例化+self+初始化+类属性类方法/class_2020-0605/类和对象.py" />
     <entry file="file://F:/BaiduNetdiskDownload/lemon班python30期代码资料/0-python编程技术/py30_20200605_第17-18节-类和对象定义+实例化+self+初始化+类属性类方法/class_2020-0605/类和对象2.py" />
     <entry file="file://F:/BaiduNetdiskDownload/lemon班python30期代码资料/0-python编程技术/py30_20200606_第20节-函数和控制流作业讲解/class_2020-0606/冒泡排序.py">
@@ -548,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conf/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/handle_path.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -653,6 +710,30 @@
           <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
           <folding>
             <element signature="e#102#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conf/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/笔记/mysql数据库操作.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/handle_db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+          <folding>
+            <element signature="e#165#179#0" expanded="true" />
           </folding>
         </state>
       </provider>
