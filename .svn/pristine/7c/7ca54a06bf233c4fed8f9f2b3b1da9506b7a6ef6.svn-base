@@ -1,4 +1,0 @@
-[log]
-name = log
-level = INFO
-file_ok = False
