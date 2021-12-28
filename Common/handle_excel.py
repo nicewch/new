@@ -31,8 +31,6 @@ class HandleExcel:
             for val in item:  # 获取每一行的值
                 values.append(val.value)
             res = dict(zip(titles, values))  # title和每一行数据，打包成字典
-            # 将请求数据从json字符串转换成字典对象。
-            res["request_data"] = json.loads(res["request_data"])
             all_datas.append(res)
         return all_datas  #返回列表，title和每一行测试数据组成的字典
 
@@ -42,8 +40,9 @@ class HandleExcel:
 
 if __name__ == '__main__':
     import os
-    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "login_cases.xlsx")
-    exc = HandleExcel(file_path,"login")
+    from Common.handle_path  import datas_dir
+    file_path = os.path.join(datas_dir, "api_cases.xlsx")
+    exc = HandleExcel(file_path,"注册")
     cases = exc.read_all_datas()
     exc.close_file()
     for case in cases:
