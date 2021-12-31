@@ -12,7 +12,7 @@ import json
 
 
 class HandleExcel:
-
+    #初始化文件路径及表名
     def __init__(self,file_path,sheet_name):
         self.wb = load_workbook(file_path)
         self.sh = self.wb[sheet_name]
