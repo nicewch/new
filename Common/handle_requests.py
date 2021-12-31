@@ -89,12 +89,13 @@ def __pre_data(data):
 
 
 if __name__ == '__main__':
-    login_url = "http://api.lemonban.com/futureloan/member/login"
-    login_datas = {"mobile_phone": "13845467789", "pwd": "1234567890"}
+    login_url = "member/login"
+    login_datas = {"mobile_phone": "17796415322", "pwd": "123456789"}
     resp = send_requests("POST",login_url,login_datas)
+    print(resp)
     token = resp.json()["data"]["token_info"]["token"]
 
-    recharge_url = "http://api.lemonban.com/futureloan/member/recharge"
+    recharge_url = "member/recharge"
     recharge_data = {"member_id": 200119, "amount": 2000}
     resp = send_requests("POST",recharge_url,recharge_data,token)
     print(resp.json())
