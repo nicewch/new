@@ -13,6 +13,7 @@ from Common.handle_phone import get_old_phone, get_new_phone
 from Common.handle_requests import send_requests
 from Common.myddt import ddt,data
 from Common.handle_excel import HandleExcel
+from Common.handle_config import conf
 
 
 he = HandleExcel(datas_dir + "\\api_cases.xlsx","登录")
@@ -33,9 +34,11 @@ class Test_Login(unittest.TestCase):
     @data(*cases)
     def test_login(self,case):
         logger.info("*********   执行用例{}：{}   *********".format(case["id"], case["title"]))
+
+        #phone, passwd = get_old_phone()
         #如果文件里有需要替换的数据，则读取mark替换
         if case["request_data"].find("#phone#") != -1:
-            phone = get_old_phone()
+            phone = conf.get("general_user","user")
             case = replace_mark_with_data(case,"#phone#",phone)
 
         resp = send_requests(case["method"], case["url"], case["request_data"])

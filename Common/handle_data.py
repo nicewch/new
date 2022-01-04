@@ -5,6 +5,9 @@ Author :wangchunhong
 Time   :2021/12/28 22:08
 Project:api
 """
+import json
+
+import jsonpath
 
 """
 1、一条用例涉及到数据当中，有url、request_data、check_sql
@@ -32,5 +35,8 @@ if __name__ == '__main__':
     }
     if case["request_data"].find("#phone#") != -1:
         case = replace_mark_with_data(case, "#phone#", "123456789001")
+    c = json.loads(case.get("request_data"))
+    c = jsonpath.jsonpath(c,"$.mobile_phone")
+    print(c)
     for key,value in case.items():
         print(key,value)
