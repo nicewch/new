@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38182dda-038b-4a1c-b4a2-485fc8614edc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Logs/py.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestData/api_cases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/api_cases.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestCase/Test_pay.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestCase/Test_pay.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +133,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="G:/BaiduNetdiskDownload/1-接口自动化测试/py30_20200708_充值接口实现+动态更新用例数据+接口关联之动态设置类属性/day7" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -264,7 +264,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>C:\Users\WP-WCH\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
