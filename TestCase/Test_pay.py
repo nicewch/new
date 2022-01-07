@@ -3,6 +3,24 @@
 # @Author    : wch
 # @FileName  : Test_pay.py
 # @Software  : PyCharm
+
+
+"""
+充值接口：
+   所有用例的前置：登陆！
+                拿到2个数据：id，token
+   把前置的数据，传递给到测试用例。
+
+   充值接口的请求数据：id
+             请求头：token
+
+遇到的问题一：充值前的用户余额：{'leave_amount': Decimal('4536202.88')}
+    处理sql语句：把Decimal对应的字段值修改为字符串返回。CAST(字段名 AS CHAR)
+    select CAST(member.leave_amount AS CHAR) as leave_amount from member where id=#member_id#;
+    方式二：Decimal类
+
+优化方式：
+"""
 import json
 import unittest
 
@@ -43,7 +61,7 @@ class Test_Login(unittest.TestCase):
     @data(*cases)
     def test_login(self,case):
         logger.info("*********   执行用例{}：{}   *********".format(case["id"], case["title"]))
-        #替换数据
+        #开始充值前替换需要替换的用户id，包括请求、期望中的
         if case["request_data"].find("#member_id#") != -1:
             case = replace_mark_with_data(case,"#member_id#",self.menmber_id)
 
@@ -53,7 +71,11 @@ class Test_Login(unittest.TestCase):
             #充值的金额
             pay_money = json.load(case['request_data'])['amount']
             #充值后的金额 = 充值前的金额 + 充值金额
-            after_money = 
+            after_money = before_count + pay_money
+            #替换期望结果中的预期金额
+            case = replace_mark_with_data(case,"#money#",after_money)
+
+            send_requests(case['method'],case['url'],case['request_data'],token = cls.token)
 
 
 
