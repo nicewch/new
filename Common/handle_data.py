@@ -2,9 +2,11 @@
 #!/usr/bin/python3
 coding : utf-8
 Author :wangchunhong
-Time   :2021/12/28 22:08
+Time   :2022/1/9 17:56
 Project:api
 """
+
+
 import json
 
 import jsonpath
@@ -13,6 +15,12 @@ import jsonpath
 1、一条用例涉及到数据当中，有url、request_data、check_sql
 
 """
+
+class EnvData:
+    """
+    存储用例要使用到的数据。
+    """
+    pass
 
 def replace_mark_with_data(case,mark,real_data):
     """
