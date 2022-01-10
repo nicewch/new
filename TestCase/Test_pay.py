@@ -43,6 +43,7 @@ db = HandleDB()  #连接数据库
 
 @ddt
 class Test_pay(unittest.TestCase):
+    #执行所有充值用例的前置条件。登录，id，token
     @classmethod
     def setUpClass(cls) -> None:
         logger.info("======  充值模块用例 开始执行  ========")
