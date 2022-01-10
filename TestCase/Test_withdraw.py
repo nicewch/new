@@ -27,11 +27,10 @@ from jsonpath import jsonpath
 from Common.handle_data import replace_mark_with_data,EnvData
 from Common.handle_log import logger
 from Common.handle_path import datas_dir
-from Common.handle_phone import get_old_phone, get_new_phone
+from Common.handle_phone import get_old_phone
 from Common.handle_requests import send_requests
 from Common.myddt import ddt,data
 from Common.handle_excel import HandleExcel
-from Common.handle_config import conf
 from Common.handle_db import HandleDB
 
 
@@ -58,7 +57,7 @@ class Test_withdraw(unittest.TestCase):
     def tearDownClass(cls) -> None:
         logger.info("======  提现模块用例 执行结束  ========")
 
-    @ddt(*cases)
+    @data(*cases)
     def test_withdraw(self,case):
         logger.info("*********   执行用例{}：{}   *********".format(case["case_id"], case["title"]))
         # 开始提现前替换需要替换的用户id，包括请求、期望中的(str)
@@ -78,9 +77,25 @@ class Test_withdraw(unittest.TestCase):
             #替换期望结果中的预期金额(str)
             case = replace_mark_with_data(case,"#money#",str(after_money))
 
-            #发起请求，提现
-            resp = send_requests(case['method'],case['url'],case['request_data'],token = EnvData.token)
+        #发起请求，提现
+        resp = send_requests(case['method'],case['url'],case['request_data'],token = EnvData.token)
 
-            #将期望结果转换成字典
-            expected = json.loads(case['expected'])
+        #将期望结果转换成字典
+        expected = json.loads(case['expected'])
+        logger.info("期望结果是:{}".format(expected))
+
+        try :
+            self.assertEqual(resp.json()['code'],expected['code'])
+            self.assertEqual(resp.json()['msg'], expected['msg'])
+            if case['check_sql']:
+                self.assertEqual(resp.json()['data']['id'], expected['data']['id'])
+                self.assertEqual(resp.json()['data']['leave_amount'], expected['data']['leave_amount'])
+
+                # 数据库查询当前余额str
+                db_money = db.select_one_data(case['check_sql'])["leave_amount"]
+                logger.info("提现后的用户余额：{}".format(db_money))
+                # db_money是str需要转换成float，保留两位小数
+                self.assertEqual("{:.2f}".format(expected["data"]["leave_amount"]), "{:.2f}".format(float(db_money)))
+        except:
+            raise
 
