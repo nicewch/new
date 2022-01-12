@@ -24,7 +24,7 @@ import unittest
 
 from jsonpath import jsonpath
 
-from Common.handle_data import replace_mark_with_data,EnvData
+from Common.handle_data import replace_mark_with_data,EnvData,replace_case_by_regular
 from Common.handle_log import logger
 from Common.handle_path import datas_dir
 from Common.handle_phone import get_old_phone
@@ -53,7 +53,7 @@ class Test_pay(unittest.TestCase):
         #cls.menmber_id = jsonpath(resp.json(),"$.data.id")[0]
         #cls.token = jsonpath(resp.json(),"$.data.token")[0]
         #动态设置为类属性(将一个接口的返回用于下一个接口的入参，可以设置为类属性)
-        setattr(EnvData, "member_id", jsonpath(resp.json(), "$..id")[0])
+        setattr(EnvData, "member_id", str(jsonpath(resp.json(), "$..id")[0])) #需要确保替换的环境变量是str
         setattr(EnvData, "token", jsonpath(resp.json(), "$..token")[0])
 
     @classmethod
@@ -65,7 +65,8 @@ class Test_pay(unittest.TestCase):
         logger.info("*********   执行用例{}：{}   *********".format(case["case_id"], case["title"]))
         #开始充值前替换需要替换的用户id，包括请求、期望中的(str)
         if case["request_data"].find("#member_id#") != -1:
-            case = replace_mark_with_data(case,"#member_id#",str(EnvData.member_id))
+            #case = replace_mark_with_data(case,"#member_id#",str(EnvData.member_id))
+            case = replace_case_by_regular(case)  #用例整条替换
 
         #通过数据库查询充值前当前账户的余额
         if case['check_sql']:
@@ -78,13 +79,12 @@ class Test_pay(unittest.TestCase):
             after_money = round(float(before_count) + pay_money,2)
             logger.info("期望的充值之后的金额为：{}".format(after_money))
             #替换期望结果中的预期金额(str)
-            case = replace_mark_with_data(case,"#money#",str(after_money))
+            #case = replace_mark_with_data(case,"#money#",str(after_money))
+            setattr(EnvData, "money", str(after_money))
+            case = replace_case_by_regular(case)
 
         #发起请求，充值
         resp = send_requests(case['method'],case['url'],case['request_data'],token = EnvData.token)
-        print(resp)
-        print(resp.json())
-        print(resp.json()['code'])
         #将期望结果转换成字典
         expected = json.loads(case['expected'])
         logger.info("期望结果是:{}".format(expected))
