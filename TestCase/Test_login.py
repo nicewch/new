@@ -29,11 +29,7 @@ class Test_Login(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls) -> None:
-<<<<<<< HEAD
-        logger.info("======  登录模块用例 开始执行  ========")
-=======
         logger.info("======  登录模块用例 执行结束  ========")
->>>>>>> testing
 
     @data(*cases)
     def test_login(self,case):

@@ -2,32 +2,22 @@
 #!/usr/bin/python3
 coding : utf-8
 Author :wangchunhong
-<<<<<<< HEAD
 Time   :2021/12/28 22:08
 Project:api
 """
-import json
-
-import jsonpath
-
-=======
-Time   :2022/1/9 17:56
-Project:api
-"""
-
 
 import json
 import re
 import jsonpath
 from Common.handle_config import conf
->>>>>>> testing
+
 """
 1、一条用例涉及到数据当中，有url、request_data、check_sql
 
 """
 
-<<<<<<< HEAD
-=======
+
+
 class EnvData:
     """
     存储用例要使用到的数据。环境变量的名称必须与标识符一致
@@ -90,7 +80,7 @@ def replace_by_regular(data):
             data = data.replace("#{}#".format(item), value)
     return data
 
->>>>>>> testing
+
 def replace_mark_with_data(case,mark,real_data):
     """
     遍历一个http请求用例涉及到的所有数据，如果说每一个数据有需要替换的，都会替换。
