@@ -2,21 +2,19 @@
 #!/usr/bin/python3
 coding : utf-8
 Author :wangchunhong
-Time   :2021/12/28 22:08
+Time   :2022/1/9 17:56
 Project:api
 """
+
 
 import json
 import re
 import jsonpath
 from Common.handle_config import conf
-
 """
 1、一条用例涉及到数据当中，有url、request_data、check_sql
 
 """
-
-
 
 class EnvData:
     """
@@ -79,7 +77,6 @@ def replace_by_regular(data):
             # 将字符串中不同的标识符替换为对应的值
             data = data.replace("#{}#".format(item), value)
     return data
-
 
 def replace_mark_with_data(case,mark,real_data):
     """
