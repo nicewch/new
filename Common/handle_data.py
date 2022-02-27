@@ -22,6 +22,17 @@ class EnvData:
     """
     pass
 
+def clear_EnvData_attrs():
+    # 清理 EnvData里设置的属性
+    values = dict(EnvData.__dict__.items())
+    for key, value in values.items():
+        if key.startswith("__"):
+            pass
+        else:
+            delattr(EnvData, key)
+
+
+
 def replace_case_by_regular(case):
     """
     :param case: excel当中，读取的整条case（字典，字典里面的值是字符串），但凡有标识符，做全部替换

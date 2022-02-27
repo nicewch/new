@@ -83,7 +83,11 @@ def __pre_data(data):
     如果data是字符串，则转换成字典对象。
     """
     if data is not None and isinstance(data,str):
-        return json.loads(data)
+        # 如果有null，则替换为None
+        if data.find("null") != -1:
+            data = data.replace("null", "None")
+        # 使用eval转成字典.eval过程中，如果表达式有涉及计算，会自动计算。
+        data = eval(data)
     return data
 
 

@@ -24,7 +24,7 @@ import unittest
 
 from jsonpath import jsonpath
 
-from Common.handle_data import replace_mark_with_data,EnvData,replace_case_by_regular
+from Common.handle_data import replace_mark_with_data,EnvData,replace_case_by_regular,clear_EnvData_attrs
 from Common.handle_log import logger
 from Common.handle_path import datas_dir
 from Common.handle_phone import get_old_phone
@@ -46,6 +46,9 @@ class Test_pay(unittest.TestCase):
     #执行所有充值用例的前置条件。登录，id，token
     @classmethod
     def setUpClass(cls) -> None:
+        # 清理 EnvData里设置的属性
+        clear_EnvData_attrs()
+
         logger.info("======  充值模块用例 开始执行  ========")
         # 前置条件，登录,得到用户id、token
         user, password = get_old_phone()
@@ -58,6 +61,8 @@ class Test_pay(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls) -> None:
+        if hasattr(EnvData,"money"):
+            delattr(EnvData,"money")
         logger.info("======  充值模块用例 执行结束  ========")
 
     @data(*cases)

@@ -7,6 +7,7 @@ Company: 湖南零檬信息技术有限公司
 ======================
 """
 
+
 class AABB:
 
     cc = "hello"
@@ -16,3 +17,16 @@ class AABB:
 
 setattr(AABB,"name","hello")
 print(AABB.name)
+
+
+print(AABB.__dict__)
+
+values = dict(AABB.__dict__.items())
+print(values)
+for key,value in values.items():
+    if key.startswith("__"):
+        pass
+    else:
+        delattr(AABB,key)
+
+print(AABB.__dict__)

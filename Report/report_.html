@@ -7159,50 +7159,340 @@ body.skin-3 {
 
 
     var resultData = {
-    "testPass": 10,
+    "testPass": 41,
     "testResult": [
         {
-            "className": "TestRegister",
-            "methodName": "test_register_ok_01",
-            "description": "注册成功-带注册名",
-            "spendTime": "0.14 s",
+            "className": "TestUserBusiness",
+            "methodName": "test_user_business_1",
+            "description": "注册",
+            "spendTime": "0.136 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "TestUserBusiness",
+            "methodName": "test_user_business_2",
+            "description": "登录",
+            "spendTime": "0.125 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "TestUserBusiness",
+            "methodName": "test_user_business_3",
+            "description": "充值",
+            "spendTime": "0.094 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_Login",
+            "methodName": "test_login_1",
+            "description": "登录成功",
+            "spendTime": "0.127 s",
             "status": "失败",
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
-                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_registe.py\", line 46, in test_register_ok\n    self.assertEqual(response.json()[\"code\"],expected[\"code\"]) #断言响应code与期望code\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_login.py\", line 50, in test_login\n    self.assertEqual(resp.json()['code'],expected['code'])\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
-                "AssertionError: 2 != 0\n",
-                "\nDuring handling of the above exception, another exception occurred:\n\n",
+                "AssertionError: 1001 != 0\n"
+            ]
+        },
+        {
+            "className": "Test_Login",
+            "methodName": "test_login_2",
+            "description": "不输入手机号",
+            "spendTime": "0.083 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_Login",
+            "methodName": "test_login_3",
+            "description": "手机号长度10位",
+            "spendTime": "0.078 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_Login",
+            "methodName": "test_login_4",
+            "description": "手机号长度12位",
+            "spendTime": "0.08 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_Login",
+            "methodName": "test_login_5",
+            "description": "手机号含有非法字符",
+            "spendTime": "0.089 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_Login",
+            "methodName": "test_login_6",
+            "description": "密码7位",
+            "spendTime": "0.126 s",
+            "status": "失败",
+            "log": [
+                "",
                 "Traceback (most recent call last):\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_registe.py\", line 51, in test_register_ok\n    assert False\n",
-                "AssertionError\n"
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_login.py\", line 50, in test_login\n    self.assertEqual(resp.json()['code'],expected['code'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 1001 != 2\n"
+            ]
+        },
+        {
+            "className": "Test_Login",
+            "methodName": "test_login_7",
+            "description": "密码17位",
+            "spendTime": "0.126 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_login.py\", line 50, in test_login\n    self.assertEqual(resp.json()['code'],expected['code'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 1001 != 2\n"
+            ]
+        },
+        {
+            "className": "Test_Login",
+            "methodName": "test_login_8",
+            "description": "不输入密码",
+            "spendTime": "0.082 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_01",
+            "description": "充值成功-整数",
+            "spendTime": "0.246 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_02",
+            "description": "充值成功-1位小数",
+            "spendTime": "0.164 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_pay.py\", line 104, in test_pay\n    self.assertEqual(resp.json()['data']['leave_amount'],expected['data']['leave_amount'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 1200.1 != 600.0\n"
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_03",
+            "description": "充值成功-2位小数",
+            "spendTime": "0.161 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_pay.py\", line 104, in test_pay\n    self.assertEqual(resp.json()['data']['leave_amount'],expected['data']['leave_amount'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 1800.32 != 1200.1\n"
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_04",
+            "description": "充值成功-50万",
+            "spendTime": "0.17 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_pay.py\", line 104, in test_pay\n    self.assertEqual(resp.json()['data']['leave_amount'],expected['data']['leave_amount'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 501800.32 != 1800.32\n"
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_05",
+            "description": "会员id为空",
+            "spendTime": "0.08 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_06",
+            "description": "id不是当前登录的用户",
+            "spendTime": "0.08 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_07",
+            "description": "会员id为字符串",
+            "spendTime": "0.079 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_08",
+            "description": "会员id为小数",
+            "spendTime": "0.092 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_09",
+            "description": "充值金额为0",
+            "spendTime": "0.09 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_pay.py\", line 99, in test_pay\n    self.assertEqual(resp.json()['code'],expected['code'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 0 != 2\n"
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_10",
+            "description": "充值金额为负数",
+            "spendTime": "0.077 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_11",
+            "description": "充值金额为空",
+            "spendTime": "0.08 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_12",
+            "description": "充值金额-3位小数",
+            "spendTime": "0.07 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_13",
+            "description": "充值金额-大于50万",
+            "spendTime": "0.08 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_pay",
+            "methodName": "test_pay_14",
+            "description": "充值金额-非数字",
+            "spendTime": "0.08 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "TestRegister",
+            "methodName": "test_register_ok_01",
+            "description": "注册成功-带注册名",
+            "spendTime": "0.51 s",
+            "status": "成功",
+            "log": [
+                ""
             ]
         },
         {
             "className": "TestRegister",
             "methodName": "test_register_ok_02",
             "description": "成功-不带用户名",
-            "spendTime": "0.09 s",
+            "spendTime": "0.393 s",
             "status": "失败",
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
-                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_registe.py\", line 46, in test_register_ok\n    self.assertEqual(response.json()[\"code\"],expected[\"code\"]) #断言响应code与期望code\n",
-                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
-                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
-                "AssertionError: 2 != 1\n",
-                "\nDuring handling of the above exception, another exception occurred:\n\n",
-                "Traceback (most recent call last):\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_registe.py\", line 51, in test_register_ok\n    assert False\n",
-                "AssertionError\n"
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_registe.py\", line 63, in test_register_ok\n    self.assertEqual(response.json()[\"code\"],expected[\"code\"]) #断言响应code与期望code\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 0 != 1\n"
             ]
         },
         {
@@ -7219,7 +7509,7 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_04",
             "description": "手机号长度10位",
-            "spendTime": "1.08 s",
+            "spendTime": "0.09 s",
             "status": "成功",
             "log": [
                 ""
@@ -7239,7 +7529,7 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_06",
             "description": "手机号含有非法字符",
-            "spendTime": "0.09 s",
+            "spendTime": "0.082 s",
             "status": "成功",
             "log": [
                 ""
@@ -7249,7 +7539,7 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_07",
             "description": "已注册过的手机号",
-            "spendTime": "0.09 s",
+            "spendTime": "0.13 s",
             "status": "成功",
             "log": [
                 ""
@@ -7259,7 +7549,7 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_08",
             "description": "密码7位",
-            "spendTime": "0.07 s",
+            "spendTime": "1.28 s",
             "status": "成功",
             "log": [
                 ""
@@ -7269,7 +7559,7 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_09",
             "description": "密码17位",
-            "spendTime": "0.08 s",
+            "spendTime": "0.09 s",
             "status": "成功",
             "log": [
                 ""
@@ -7289,7 +7579,7 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_11",
             "description": "注册名11位",
-            "spendTime": "0.09 s",
+            "spendTime": "0.071 s",
             "status": "成功",
             "log": [
                 ""
@@ -7299,7 +7589,7 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_12",
             "description": "类型输入非0，1内容",
-            "spendTime": "0.08 s",
+            "spendTime": "0.09 s",
             "status": "成功",
             "log": [
                 ""
@@ -7309,30 +7599,182 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_13",
             "description": "不输入类型",
-            "spendTime": "0.1 s",
+            "spendTime": "0.542 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_01",
+            "description": "提现成功-整数",
+            "spendTime": "0.241 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_02",
+            "description": "提现成功-1位小数",
+            "spendTime": "0.24 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_03",
+            "description": "提现成功-2位小数",
+            "spendTime": "0.242 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_04",
+            "description": "提现成功-50万",
+            "spendTime": "0.25 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_05",
+            "description": "会员id为空",
+            "spendTime": "0.08 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_06",
+            "description": "id不是当前登录的用户",
+            "spendTime": "0.08 s",
             "status": "失败",
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
-                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_registe.py\", line 46, in test_register_ok\n    self.assertEqual(response.json()[\"code\"],expected[\"code\"]) #断言响应code与期望code\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_withdraw.py\", line 88, in test_withdraw\n    self.assertEqual(resp.json()['code'],expected['code'])\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
-                "AssertionError: 2 != 0\n",
-                "\nDuring handling of the above exception, another exception occurred:\n\n",
+                "AssertionError: 2 != 1007\n"
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_07",
+            "description": "会员id为字符串",
+            "spendTime": "0.085 s",
+            "status": "失败",
+            "log": [
+                "",
                 "Traceback (most recent call last):\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_registe.py\", line 51, in test_register_ok\n    assert False\n",
-                "AssertionError\n"
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_withdraw.py\", line 88, in test_withdraw\n    self.assertEqual(resp.json()['code'],expected['code'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 1002 != 2\n"
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_08",
+            "description": "会员id为小数",
+            "spendTime": "0.08 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_09",
+            "description": "充值金额为0",
+            "spendTime": "0.09 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_withdraw.py\", line 88, in test_withdraw\n    self.assertEqual(resp.json()['code'],expected['code'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 0 != 2\n"
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_10",
+            "description": "充值金额为负数",
+            "spendTime": "0.09 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_11",
+            "description": "充值金额为空",
+            "spendTime": "0.08 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_12",
+            "description": "充值金额-3位小数",
+            "spendTime": "0.086 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_13",
+            "description": "充值金额-大于50万",
+            "spendTime": "0.084 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_14",
+            "description": "充值金额-非数字",
+            "spendTime": "0.08 s",
+            "status": "成功",
+            "log": [
+                ""
             ]
         }
     ],
     "testName": "py30-注册用例自动化",
-    "testAll": 13,
-    "testFail": 3,
-    "beginTime": "2021-12-22 22:33:07",
-    "totalTime": "2s",
+    "testAll": 52,
+    "testFail": 11,
+    "beginTime": "2022-02-27 17:44:56",
+    "totalTime": "9s",
     "testSkip": 0,
     "testError": 0
 };
