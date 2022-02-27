@@ -7159,13 +7159,21 @@ body.skin-3 {
 
 
     var resultData = {
+<<<<<<< HEAD
     "testPass": 36,
+=======
+    "testPass": 42,
+>>>>>>> testing
     "testResult": [
         {
             "className": "TestUserBusiness",
             "methodName": "test_user_business_1",
             "description": "注册",
+<<<<<<< HEAD
             "spendTime": "0.118 s",
+=======
+            "spendTime": "0.139 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7175,8 +7183,13 @@ body.skin-3 {
             "className": "TestUserBusiness",
             "methodName": "test_user_business_2",
             "description": "登录",
+<<<<<<< HEAD
             "spendTime": "0.1 s",
             "status": "错误",
+=======
+            "spendTime": "0.142 s",
+            "status": "成功",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
@@ -7192,8 +7205,13 @@ body.skin-3 {
             "className": "TestUserBusiness",
             "methodName": "test_user_business_3",
             "description": "充值",
+<<<<<<< HEAD
             "spendTime": "0.0 s",
             "status": "错误",
+=======
+            "spendTime": "0.092 s",
+            "status": "成功",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
@@ -7213,7 +7231,11 @@ body.skin-3 {
             "className": "Test_Login",
             "methodName": "test_login_1",
             "description": "登录成功",
+<<<<<<< HEAD
             "spendTime": "0.133 s",
+=======
+            "spendTime": "0.131 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7223,7 +7245,11 @@ body.skin-3 {
             "className": "Test_Login",
             "methodName": "test_login_2",
             "description": "不输入手机号",
+<<<<<<< HEAD
             "spendTime": "0.08 s",
+=======
+            "spendTime": "0.081 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7233,7 +7259,11 @@ body.skin-3 {
             "className": "Test_Login",
             "methodName": "test_login_3",
             "description": "手机号长度10位",
+<<<<<<< HEAD
             "spendTime": "0.09 s",
+=======
+            "spendTime": "0.072 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7243,7 +7273,11 @@ body.skin-3 {
             "className": "Test_Login",
             "methodName": "test_login_4",
             "description": "手机号长度12位",
+<<<<<<< HEAD
             "spendTime": "0.09 s",
+=======
+            "spendTime": "0.074 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7253,7 +7287,11 @@ body.skin-3 {
             "className": "Test_Login",
             "methodName": "test_login_5",
             "description": "手机号含有非法字符",
+<<<<<<< HEAD
             "spendTime": "0.08 s",
+=======
+            "spendTime": "0.082 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7281,7 +7319,11 @@ body.skin-3 {
             "className": "Test_Login",
             "methodName": "test_login_7",
             "description": "密码17位",
+<<<<<<< HEAD
             "spendTime": "0.13 s",
+=======
+            "spendTime": "0.143 s",
+>>>>>>> testing
             "status": "失败",
             "log": [
                 "",
@@ -7309,8 +7351,13 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_01",
             "description": "充值成功-整数",
+<<<<<<< HEAD
             "spendTime": "0.108 s",
             "status": "错误",
+=======
+            "spendTime": "0.242 s",
+            "status": "成功",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
@@ -7334,14 +7381,20 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_02",
             "description": "充值成功-1位小数",
+<<<<<<< HEAD
             "spendTime": "0.0625 s",
             "status": "错误",
+=======
+            "spendTime": "0.156 s",
+            "status": "失败",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+<<<<<<< HEAD
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_pay.py\", line 78, in test_pay\n    before_count = db.select_one_data(case['check_sql'])['leave_amount']  #before_count类型str\n",
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_db.py\", line 40, in select_one_data\n    self.cur.execute(sql)   #执行sql语句\n",
                 "  File \"D:\\python\\lib\\site-packages\\pymysql\\cursors.py\", line 170, in execute\n    result = self._query(query)\n",
@@ -7353,20 +7406,32 @@ body.skin-3 {
                 "  File \"D:\\python\\lib\\site-packages\\pymysql\\protocol.py\", line 220, in check_error\n    err.raise_mysql_exception(self._data)\n",
                 "  File \"D:\\python\\lib\\site-packages\\pymysql\\err.py\", line 109, in raise_mysql_exception\n    raise errorclass(errno, errval)\n",
                 "pymysql.err.ProgrammingError: (1064, \"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '}' at line 1\")\n"
+=======
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_pay.py\", line 104, in test_pay\n    self.assertEqual(resp.json()['data']['leave_amount'],expected['data']['leave_amount'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 2400.1 != 1800.0\n"
+>>>>>>> testing
             ]
         },
         {
             "className": "Test_pay",
             "methodName": "test_pay_03",
             "description": "充值成功-2位小数",
+<<<<<<< HEAD
             "spendTime": "0.07 s",
             "status": "错误",
+=======
+            "spendTime": "0.166 s",
+            "status": "失败",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+<<<<<<< HEAD
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_pay.py\", line 78, in test_pay\n    before_count = db.select_one_data(case['check_sql'])['leave_amount']  #before_count类型str\n",
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_db.py\", line 40, in select_one_data\n    self.cur.execute(sql)   #执行sql语句\n",
                 "  File \"D:\\python\\lib\\site-packages\\pymysql\\cursors.py\", line 170, in execute\n    result = self._query(query)\n",
@@ -7378,20 +7443,32 @@ body.skin-3 {
                 "  File \"D:\\python\\lib\\site-packages\\pymysql\\protocol.py\", line 220, in check_error\n    err.raise_mysql_exception(self._data)\n",
                 "  File \"D:\\python\\lib\\site-packages\\pymysql\\err.py\", line 109, in raise_mysql_exception\n    raise errorclass(errno, errval)\n",
                 "pymysql.err.ProgrammingError: (1064, \"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '}' at line 1\")\n"
+=======
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_pay.py\", line 104, in test_pay\n    self.assertEqual(resp.json()['data']['leave_amount'],expected['data']['leave_amount'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 3000.32 != 2400.1\n"
+>>>>>>> testing
             ]
         },
         {
             "className": "Test_pay",
             "methodName": "test_pay_04",
             "description": "充值成功-50万",
+<<<<<<< HEAD
             "spendTime": "0.07 s",
             "status": "错误",
+=======
+            "spendTime": "0.156 s",
+            "status": "失败",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+<<<<<<< HEAD
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_pay.py\", line 78, in test_pay\n    before_count = db.select_one_data(case['check_sql'])['leave_amount']  #before_count类型str\n",
                 "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_db.py\", line 40, in select_one_data\n    self.cur.execute(sql)   #执行sql语句\n",
                 "  File \"D:\\python\\lib\\site-packages\\pymysql\\cursors.py\", line 170, in execute\n    result = self._query(query)\n",
@@ -7403,13 +7480,23 @@ body.skin-3 {
                 "  File \"D:\\python\\lib\\site-packages\\pymysql\\protocol.py\", line 220, in check_error\n    err.raise_mysql_exception(self._data)\n",
                 "  File \"D:\\python\\lib\\site-packages\\pymysql\\err.py\", line 109, in raise_mysql_exception\n    raise errorclass(errno, errval)\n",
                 "pymysql.err.ProgrammingError: (1064, \"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '}' at line 1\")\n"
+=======
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_pay.py\", line 104, in test_pay\n    self.assertEqual(resp.json()['data']['leave_amount'],expected['data']['leave_amount'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 503000.32 != 3000.32\n"
+>>>>>>> testing
             ]
         },
         {
             "className": "Test_pay",
             "methodName": "test_pay_05",
             "description": "会员id为空",
+<<<<<<< HEAD
             "spendTime": "0.0725 s",
+=======
+            "spendTime": "0.116 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7419,7 +7506,11 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_06",
             "description": "id不是当前登录的用户",
+<<<<<<< HEAD
             "spendTime": "0.0775 s",
+=======
+            "spendTime": "0.087 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7429,8 +7520,13 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_07",
             "description": "会员id为字符串",
+<<<<<<< HEAD
             "spendTime": "0.1 s",
             "status": "失败",
+=======
+            "spendTime": "0.075 s",
+            "status": "成功",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
@@ -7447,7 +7543,11 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_08",
             "description": "会员id为小数",
+<<<<<<< HEAD
             "spendTime": "0.08 s",
+=======
+            "spendTime": "0.087 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7457,7 +7557,7 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_09",
             "description": "充值金额为0",
-            "spendTime": "0.09 s",
+            "spendTime": "0.095 s",
             "status": "失败",
             "log": [
                 "",
@@ -7475,8 +7575,13 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_10",
             "description": "充值金额为负数",
+<<<<<<< HEAD
             "spendTime": "0.113 s",
             "status": "错误",
+=======
+            "spendTime": "0.08 s",
+            "status": "成功",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
@@ -7494,8 +7599,13 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_11",
             "description": "充值金额为空",
+<<<<<<< HEAD
             "spendTime": "0.085 s",
             "status": "失败",
+=======
+            "spendTime": "0.088 s",
+            "status": "成功",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
@@ -7512,8 +7622,13 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_12",
             "description": "充值金额-3位小数",
+<<<<<<< HEAD
             "spendTime": "0.0925 s",
             "status": "失败",
+=======
+            "spendTime": "0.085 s",
+            "status": "成功",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
@@ -7531,8 +7646,13 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_13",
             "description": "充值金额-大于50万",
+<<<<<<< HEAD
             "spendTime": "0.0775 s",
             "status": "失败",
+=======
+            "spendTime": "0.087 s",
+            "status": "成功",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
@@ -7550,7 +7670,11 @@ body.skin-3 {
             "className": "Test_pay",
             "methodName": "test_pay_14",
             "description": "充值金额-非数字",
+<<<<<<< HEAD
             "spendTime": "0.095 s",
+=======
+            "spendTime": "0.084 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7560,7 +7684,11 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_01",
             "description": "注册成功-带注册名",
+<<<<<<< HEAD
             "spendTime": "0.555 s",
+=======
+            "spendTime": "0.501 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7570,7 +7698,11 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_02",
             "description": "成功-不带用户名",
+<<<<<<< HEAD
             "spendTime": "0.41 s",
+=======
+            "spendTime": "0.398 s",
+>>>>>>> testing
             "status": "失败",
             "log": [
                 "",
@@ -7588,7 +7720,11 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_03",
             "description": "不输入手机号",
+<<<<<<< HEAD
             "spendTime": "0.0875 s",
+=======
+            "spendTime": "0.084 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7598,7 +7734,11 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_04",
             "description": "手机号长度10位",
+<<<<<<< HEAD
             "spendTime": "0.08 s",
+=======
+            "spendTime": "0.082 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7608,7 +7748,7 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_05",
             "description": "手机号长度12位",
-            "spendTime": "0.08 s",
+            "spendTime": "0.078 s",
             "status": "成功",
             "log": [
                 ""
@@ -7618,7 +7758,11 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_06",
             "description": "手机号含有非法字符",
+<<<<<<< HEAD
             "spendTime": "0.0825 s",
+=======
+            "spendTime": "0.085 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7628,7 +7772,11 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_07",
             "description": "已注册过的手机号",
+<<<<<<< HEAD
             "spendTime": "0.153 s",
+=======
+            "spendTime": "0.128 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7638,7 +7786,11 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_08",
             "description": "密码7位",
+<<<<<<< HEAD
             "spendTime": "0.125 s",
+=======
+            "spendTime": "0.082 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7648,7 +7800,11 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_09",
             "description": "密码17位",
+<<<<<<< HEAD
             "spendTime": "0.085 s",
+=======
+            "spendTime": "0.079 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7658,7 +7814,11 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_10",
             "description": "不输入密码",
+<<<<<<< HEAD
             "spendTime": "0.09 s",
+=======
+            "spendTime": "0.074 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7668,7 +7828,11 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_11",
             "description": "注册名11位",
+<<<<<<< HEAD
             "spendTime": "0.085 s",
+=======
+            "spendTime": "0.075 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
@@ -7678,7 +7842,7 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_12",
             "description": "类型输入非0，1内容",
-            "spendTime": "0.09 s",
+            "spendTime": "0.079 s",
             "status": "成功",
             "log": [
                 ""
@@ -7688,18 +7852,30 @@ body.skin-3 {
             "className": "TestRegister",
             "methodName": "test_register_ok_13",
             "description": "不输入类型",
+<<<<<<< HEAD
             "spendTime": "0.57 s",
+=======
+            "spendTime": "0.508 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
             ]
         },
         {
+<<<<<<< HEAD
             "className": "_FailedTest",
             "methodName": "Test_withdraw",
             "description": null,
             "spendTime": "0.0 s",
             "status": "错误",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_01",
+            "description": "提现成功-整数",
+            "spendTime": "0.235 s",
+            "status": "成功",
+>>>>>>> testing
             "log": [
                 "",
                 "Traceback (most recent call last):\n",
@@ -7710,56 +7886,93 @@ body.skin-3 {
             ]
         },
         {
+<<<<<<< HEAD
             "className": "TestAdd",
             "methodName": "test_add_01",
             "description": "前置操作 - 管理员登陆",
             "spendTime": "0.168 s",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_02",
+            "description": "提现成功-1位小数",
+            "spendTime": "0.229 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
             ]
         },
         {
+<<<<<<< HEAD
             "className": "TestAdd",
             "methodName": "test_add_02",
             "description": "加标成功",
             "spendTime": "0.075 s",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_03",
+            "description": "提现成功-2位小数",
+            "spendTime": "0.228 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
             ]
         },
         {
+<<<<<<< HEAD
             "className": "TestAdd",
             "methodName": "test_add_03",
             "description": "加标失败—借款人id为空",
             "spendTime": "0.09 s",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_04",
+            "description": "提现成功-50万",
+            "spendTime": "0.234 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
             ]
         },
         {
+<<<<<<< HEAD
             "className": "TestAdd",
             "methodName": "test_add_04",
             "description": "加标失败—标题为空",
             "spendTime": "0.08 s",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_05",
+            "description": "会员id为空",
+            "spendTime": "0.081 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
             ]
         },
         {
+<<<<<<< HEAD
             "className": "TestAdd",
             "methodName": "test_add_05",
             "description": "加标失败—借款金额为空",
             "spendTime": "0.09 s",
             "status": "成功",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_06",
+            "description": "id不是当前登录的用户",
+            "spendTime": "0.087 s",
+            "status": "失败",
+>>>>>>> testing
             "log": [
                 ""
             ]
         },
         {
+<<<<<<< HEAD
             "className": "TestAdd",
             "methodName": "test_add_06",
             "description": "加标失败—年利率为空",
@@ -7774,77 +7987,377 @@ body.skin-3 {
             "methodName": "test_add_07",
             "description": "加标失败—借款期限为空",
             "spendTime": "0.0825 s",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_07",
+            "description": "会员id为字符串",
+            "spendTime": "0.088 s",
+            "status": "失败",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\Test_withdraw.py\", line 88, in test_withdraw\n    self.assertEqual(resp.json()['code'],expected['code'])\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 0 != 2\n"
+            ]
+        },
+        {
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_08",
+            "description": "会员id为小数",
+            "spendTime": "0.081 s",
+>>>>>>> testing
             "status": "成功",
             "log": [
                 ""
             ]
         },
         {
+<<<<<<< HEAD
             "className": "TestAdd",
             "methodName": "test_add_08",
             "description": "加标失败—借款期限类型为空",
             "spendTime": "0.0825 s",
             "status": "成功",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_09",
+            "description": "充值金额为0",
+            "spendTime": "0.091 s",
+            "status": "失败",
+>>>>>>> testing
             "log": [
                 ""
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "className": "TestAdd",
+            "methodName": "test_add_09",
+            "description": "加标失败—竞标天数为空",
+            "spendTime": "0.08 s",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_10",
+            "description": "充值金额为负数",
+            "spendTime": "0.084 s",
+>>>>>>> testing
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "className": "TestAdd",
+            "methodName": "test_add_10",
+            "description": "加标失败—借款人id不是当前登录用户",
+            "spendTime": "0.0725 s",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_11",
+            "description": "充值金额为空",
+            "spendTime": "0.09 s",
+>>>>>>> testing
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "className": "TestAdd",
+            "methodName": "test_add_11",
+            "description": "加标失败—借款金额为负数",
+            "spendTime": "0.0925 s",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_12",
+            "description": "充值金额-3位小数",
+            "spendTime": "0.081 s",
+>>>>>>> testing
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "className": "TestAdd",
+            "methodName": "test_add_12",
+            "description": "加标失败—借款金额为小数",
+            "spendTime": "0.08 s",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_13",
+            "description": "充值金额-大于50万",
+            "spendTime": "0.085 s",
+>>>>>>> testing
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+<<<<<<< HEAD
+            "className": "TestAdd",
+            "methodName": "test_add_13",
+            "description": "前置操作 -普通用户登陆",
+            "spendTime": "0.14 s",
+=======
+            "className": "Test_withdraw",
+            "methodName": "test_withdraw_14",
+            "description": "充值金额-非数字",
+            "spendTime": "0.087 s",
+>>>>>>> testing
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "TestAdd",
+            "methodName": "test_add_01",
+            "description": "加标成功",
+            "spendTime": "0.002 s",
+            "status": "错误",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 54, in test_add\n    response = send_requests(case[\"method\"], case[\"url\"], case[\"request_data\"])\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 39, in send_requests\n    data = __pre_data(data)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 90, in __pre_data\n    data = eval(data)\n",
+                "  File \"<string>\", line 1\n",
+                "    {\"member_id\":#member_id#,\"title\":\"借钱实现财富自由\",\"amount\":2000,\"loan_rate\":12.0,\"loan_term\":3,\"loan_date_type\":1,\"bidding_days\":5}\n",
+                "                                                                                                                                ^\n",
+                "SyntaxError: unexpected EOF while parsing\n"
+            ]
+        },
+        {
+            "className": "TestAdd",
+            "methodName": "test_add_02",
+            "description": "加标失败—借款人id为空",
+            "spendTime": "0.087 s",
+            "status": "错误",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 56, in test_add\n    if case[\"extract_data\"]:\n",
+                "KeyError: 'extract_data'\n"
+            ]
+        },
+        {
+            "className": "TestAdd",
+            "methodName": "test_add_03",
+            "description": "加标失败—标题为空",
+            "spendTime": "0.001 s",
+            "status": "错误",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 54, in test_add\n    response = send_requests(case[\"method\"], case[\"url\"], case[\"request_data\"])\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 39, in send_requests\n    data = __pre_data(data)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 90, in __pre_data\n    data = eval(data)\n",
+                "  File \"<string>\", line 1\n",
+                "    {\"member_id\":#member_id#,\"amount\":2000,\"loan_rate\":12.0,\"loan_term\":3,\"loan_date_type\":1,\"bidding_days\":5}\n",
+                "                                                                                                             ^\n",
+                "SyntaxError: unexpected EOF while parsing\n"
+            ]
+        },
+        {
+            "className": "TestAdd",
+            "methodName": "test_add_04",
+            "description": "加标失败—借款金额为空",
+            "spendTime": "0.0 s",
+            "status": "错误",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 54, in test_add\n    response = send_requests(case[\"method\"], case[\"url\"], case[\"request_data\"])\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 39, in send_requests\n    data = __pre_data(data)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 90, in __pre_data\n    data = eval(data)\n",
+                "  File \"<string>\", line 1\n",
+                "    {\"member_id\":#member_id#,\"title\":\"借钱实现财富自由\",\"loan_rate\":12.0,\"loan_term\":3,\"loan_date_type\":1,\"bidding_days\":5}\n",
+                "                                                                                                                  ^\n",
+                "SyntaxError: unexpected EOF while parsing\n"
+            ]
+        },
+        {
+            "className": "TestAdd",
+            "methodName": "test_add_05",
+            "description": "加标失败—年利率为空",
+            "spendTime": "0.001 s",
+            "status": "错误",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 54, in test_add\n    response = send_requests(case[\"method\"], case[\"url\"], case[\"request_data\"])\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 39, in send_requests\n    data = __pre_data(data)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 90, in __pre_data\n    data = eval(data)\n",
+                "  File \"<string>\", line 1\n",
+                "    {\"member_id\":#member_id#,\"title\":\"借钱实现财富自由\",\"amount\":2000,\"loan_term\":3,\"loan_date_type\":1,\"bidding_days\":5}\n",
+                "                                                                                                               ^\n",
+                "SyntaxError: unexpected EOF while parsing\n"
+            ]
+        },
+        {
+            "className": "TestAdd",
+            "methodName": "test_add_06",
+            "description": "加标失败—借款期限为空",
+            "spendTime": "0.001 s",
+            "status": "错误",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 54, in test_add\n    response = send_requests(case[\"method\"], case[\"url\"], case[\"request_data\"])\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 39, in send_requests\n    data = __pre_data(data)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 90, in __pre_data\n    data = eval(data)\n",
+                "  File \"<string>\", line 1\n",
+                "    {\"member_id\":#member_id#,\"title\":\"借钱实现财富自由\",\"amount\":2000,\"loan_rate\":12.0,\"loan_date_type\":1,\"bidding_days\":5}\n",
+                "                                                                                                                  ^\n",
+                "SyntaxError: unexpected EOF while parsing\n"
+            ]
+        },
+        {
+            "className": "TestAdd",
+            "methodName": "test_add_07",
+            "description": "加标失败—借款期限类型为空",
+            "spendTime": "0.0 s",
+            "status": "错误",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 54, in test_add\n    response = send_requests(case[\"method\"], case[\"url\"], case[\"request_data\"])\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 39, in send_requests\n    data = __pre_data(data)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 90, in __pre_data\n    data = eval(data)\n",
+                "  File \"<string>\", line 1\n",
+                "    {\"member_id\":#member_id#,\"title\":\"借钱实现财富自由\",\"amount\":2000,\"loan_rate\":12.0,\"loan_term\":3,\"bidding_days\":5}\n",
+                "                                                                                                             ^\n",
+                "SyntaxError: unexpected EOF while parsing\n"
+            ]
+        },
+        {
+            "className": "TestAdd",
+            "methodName": "test_add_08",
+            "description": "加标失败—竞标天数为空",
+            "spendTime": "0.001 s",
+            "status": "错误",
+            "log": [
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 54, in test_add\n    response = send_requests(case[\"method\"], case[\"url\"], case[\"request_data\"])\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 39, in send_requests\n    data = __pre_data(data)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 90, in __pre_data\n    data = eval(data)\n",
+                "  File \"<string>\", line 1\n",
+                "    {\"member_id\":#member_id#,\"title\":\"借钱实现财富自由\",\"amount\":2000,\"loan_rate\":12.0,\"loan_term\":3,\"loan_date_type\":1}\n",
+                "                                                                                                               ^\n",
+                "SyntaxError: unexpected EOF while parsing\n"
             ]
         },
         {
             "className": "TestAdd",
             "methodName": "test_add_09",
-            "description": "加标失败—竞标天数为空",
-            "spendTime": "0.08 s",
-            "status": "成功",
+            "description": "加标失败—借款人id不是当前登录用户",
+            "spendTime": "0.001 s",
+            "status": "错误",
             "log": [
-                ""
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 54, in test_add\n    response = send_requests(case[\"method\"], case[\"url\"], case[\"request_data\"])\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 39, in send_requests\n    data = __pre_data(data)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 90, in __pre_data\n    data = eval(data)\n",
+                "  File \"<string>\", line 1\n",
+                "    {\"member_id\":#member_id#+1,\"title\":\"借钱实现财富自由\",\"amount\":2000,\"loan_rate\":12.0,\"loan_term\":3,\"loan_date_type\":1,\"bidding_days\":5}\n",
+                "                                                                                                                                  ^\n",
+                "SyntaxError: unexpected EOF while parsing\n"
             ]
         },
         {
             "className": "TestAdd",
             "methodName": "test_add_10",
-            "description": "加标失败—借款人id不是当前登录用户",
-            "spendTime": "0.0725 s",
-            "status": "成功",
+            "description": "加标失败—借款金额为负数",
+            "spendTime": "0.0 s",
+            "status": "错误",
             "log": [
-                ""
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 54, in test_add\n    response = send_requests(case[\"method\"], case[\"url\"], case[\"request_data\"])\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 39, in send_requests\n    data = __pre_data(data)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 90, in __pre_data\n    data = eval(data)\n",
+                "  File \"<string>\", line 1\n",
+                "    {\"member_id\":#member_id#,\"title\":\"借钱实现财富自由\",\"amount\":-2000,\"loan_rate\":12.0,\"loan_term\":3,\"loan_date_type\":1,\"bidding_days\":5}\n",
+                "                                                                                                                                 ^\n",
+                "SyntaxError: unexpected EOF while parsing\n"
             ]
         },
         {
             "className": "TestAdd",
             "methodName": "test_add_11",
-            "description": "加标失败—借款金额为负数",
-            "spendTime": "0.0925 s",
-            "status": "成功",
-            "log": [
-                ""
-            ]
-        },
-        {
-            "className": "TestAdd",
-            "methodName": "test_add_12",
             "description": "加标失败—借款金额为小数",
-            "spendTime": "0.08 s",
-            "status": "成功",
+            "spendTime": "0.001 s",
+            "status": "错误",
             "log": [
-                ""
-            ]
-        },
-        {
-            "className": "TestAdd",
-            "methodName": "test_add_13",
-            "description": "前置操作 -普通用户登陆",
-            "spendTime": "0.14 s",
-            "status": "成功",
-            "log": [
-                ""
+                "",
+                "Traceback (most recent call last):\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
+                "  File \"D:\\python\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\myddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\TestCase\\test_add.py\", line 54, in test_add\n    response = send_requests(case[\"method\"], case[\"url\"], case[\"request_data\"])\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 39, in send_requests\n    data = __pre_data(data)\n",
+                "  File \"C:\\Users\\Administrator\\Desktop\\api\\Common\\handle_requests.py\", line 90, in __pre_data\n    data = eval(data)\n",
+                "  File \"<string>\", line 1\n",
+                "    {\"member_id\":#member_id#,\"title\":\"借钱实现财富自由\",\"amount\":2000.1,\"loan_rate\":12.0,\"loan_term\":3,\"loan_date_type\":1,\"bidding_days\":5}\n",
+                "                                                                                                                                  ^\n",
+                "SyntaxError: unexpected EOF while parsing\n"
             ]
         }
     ],
     "testName": "py30-注册用例自动化",
+<<<<<<< HEAD
     "testAll": 52,
     "testFail": 16,
     "beginTime": "2022-02-28 00:26:01",
     "totalTime": "6s",
+=======
+    "testAll": 63,
+    "testFail": 21,
+    "beginTime": "2022-02-28 00:38:18",
+    "totalTime": "8s",
+>>>>>>> testing
     "testSkip": 0,
     "testError": 0
 };

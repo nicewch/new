@@ -4753,6 +4753,7 @@ AssertionError: 0 != 1
 2022-02-27 17:45:05,720 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 2022-02-27 17:45:05,720 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 2, 'msg': '数值参数格式不正确'}
 2022-02-27 17:45:05,720 log1 INFO Test_withdraw.py-58 line：======  提现模块用例 执行结束  ========
+<<<<<<< HEAD
 >>>>>>> testing
 2022-02-28 00:23:17,426 log1 INFO Test_login.py-28 line：======  登录模块用例 开始执行  ========
 2022-02-28 00:23:17,426 log1 INFO Test_login.py-36 line：*********   执行用例1：登录成功   *********
@@ -5289,6 +5290,284 @@ AssertionError: 0 != 1
 2022-02-28 00:26:05,007 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 34211901, 'reg_name': '小柠檬', 'mobile_phone': '15524198800'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
 2022-02-28 00:26:05,007 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":1,"msg":"手机号为空"}
 2022-02-28 00:26:05,007 log1 ERROR Test_registe.py-71 line：断言失败！
+=======
+2022-02-28 00:38:18,692 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:18,692 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:18,692 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:18,692 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:18,692 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '14582574917', 'pwd': '123456789', 'type': 0, 'reg_name': '美丽可爱的小简'}
+2022-02-28 00:38:18,829 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:18,830 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 34211926, 'reg_name': '美丽可爱的小简', 'mobile_phone': '14582574917'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:18,830 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:18,830 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:18,830 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:18,830 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:18,830 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '14582574917', 'pwd': '123456789'}
+2022-02-28 00:38:18,969 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:18,970 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 34211926, 'leave_amount': 0.0, 'mobile_phone': '14582574917', 'reg_name': '美丽可爱的小简', 'reg_time': '2022-02-28 00:38:49.0', 'type': 0, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-02-28 00:43:49', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjM0MjExOTI2LCJleHAiOjE2NDU5ODAyMjl9.wut1g68P36snF31m_Jf4F_0wFEQuSWimyBV-on6d5CnGEHo6RMwXiYPTTbpnGpii7EIK5IyJNoY5iHaf98gQ_g'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:18,970 log1 INFO handle_extract_data_from_response.py-22 line：要从响应结果当中提取的数据集为：
+{'member_id': '$..id', 'token': '$..token'}
+2022-02-28 00:38:18,971 log1 INFO handle_extract_data_from_response.py-28 line：设置环境变量.key:member_id,value:34211926
+2022-02-28 00:38:18,971 log1 INFO handle_extract_data_from_response.py-28 line：设置环境变量.key:token,value:eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjM0MjExOTI2LCJleHAiOjE2NDU5ODAyMjl9.wut1g68P36snF31m_Jf4F_0wFEQuSWimyBV-on6d5CnGEHo6RMwXiYPTTbpnGpii7EIK5IyJNoY5iHaf98gQ_g
+2022-02-28 00:38:18,972 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:18,972 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjM0MjExOTI2LCJleHAiOjE2NDU5ODAyMjl9.wut1g68P36snF31m_Jf4F_0wFEQuSWimyBV-on6d5CnGEHo6RMwXiYPTTbpnGpii7EIK5IyJNoY5iHaf98gQ_g'}
+2022-02-28 00:38:18,972 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:18,972 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:18,972 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 34211926, 'amount': 600}
+2022-02-28 00:38:19,063 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:19,064 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 34211926, 'leave_amount': 600.0, 'mobile_phone': '14582574917', 'reg_name': '美丽可爱的小简', 'reg_time': '2022-02-28 00:38:49.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:19,064 log1 INFO Test_login.py-28 line：======  登录模块用例 开始执行  ========
+2022-02-28 00:38:19,064 log1 INFO Test_login.py-36 line：*********   执行用例1：登录成功   *********
+2022-02-28 00:38:19,064 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:19,064 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:19,064 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:19,064 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:19,065 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '17796415322', 'pwd': '123456789'}
+2022-02-28 00:38:19,194 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:19,194 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 1200.0, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-02-28 00:43:49', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjI5fQ.vw_SyqbO--BUPtVCQ5d3sIk-O12jBn4zUodg9K3Rw2VPT-LnZIEJrT_k6q7fM5Co1vvbxiXh-m4Oc0eSRa_6uA'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:19,195 log1 INFO Test_login.py-48 line：用例的期望结果为：{"code": 0,"msg": "OK"}
+2022-02-28 00:38:19,195 log1 INFO Test_login.py-36 line：*********   执行用例2：不输入手机号   *********
+2022-02-28 00:38:19,195 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:19,195 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:19,195 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:19,195 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:19,195 log1 INFO handle_requests.py-44 line：请求数据为：{'pwd': '12345678'}
+2022-02-28 00:38:19,275 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:19,275 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:19,276 log1 INFO Test_login.py-48 line：用例的期望结果为：{"code":1,"msg":"手机号码为空"}
+2022-02-28 00:38:19,276 log1 INFO Test_login.py-36 line：*********   执行用例3：手机号长度10位   *********
+2022-02-28 00:38:19,276 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:19,276 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:19,276 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:19,276 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:19,276 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '1550000000', 'pwd': '12345678'}
+2022-02-28 00:38:19,348 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:19,348 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:19,348 log1 INFO Test_login.py-48 line：用例的期望结果为：{"code":2,"msg":"无效的手机格式"}
+2022-02-28 00:38:19,348 log1 INFO Test_login.py-36 line：*********   执行用例4：手机号长度12位   *********
+2022-02-28 00:38:19,348 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:19,349 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:19,349 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:19,349 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:19,349 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '155000000001', 'pwd': '12345678'}
+2022-02-28 00:38:19,421 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:19,422 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:19,422 log1 INFO Test_login.py-48 line：用例的期望结果为：{"code":2,"msg":"无效的手机格式"}
+2022-02-28 00:38:19,422 log1 INFO Test_login.py-36 line：*********   执行用例5：手机号含有非法字符   *********
+2022-02-28 00:38:19,422 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:19,422 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:19,422 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:19,422 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:19,422 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '1550000000q', 'pwd': '12345678'}
+2022-02-28 00:38:19,503 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:19,504 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:19,504 log1 INFO Test_login.py-48 line：用例的期望结果为：{"code":2,"msg":"无效的手机格式"}
+2022-02-28 00:38:19,504 log1 INFO Test_login.py-36 line：*********   执行用例6：密码7位   *********
+2022-02-28 00:38:19,504 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:19,504 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:19,504 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:19,504 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:19,505 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '15500056781', 'pwd': '1234567'}
+2022-02-28 00:38:19,630 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:19,630 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:19,630 log1 INFO Test_login.py-48 line：用例的期望结果为：{"code":2,"msg":"密码格式为8到16位"}
+2022-02-28 00:38:19,631 log1 INFO Test_login.py-53 line：失败
+2022-02-28 00:38:19,652 log1 INFO Test_login.py-36 line：*********   执行用例7：密码17位   *********
+2022-02-28 00:38:19,652 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:19,653 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:19,653 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:19,654 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:19,654 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '15500000001', 'pwd': '12345678901234567'}
+2022-02-28 00:38:19,794 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:19,794 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:19,794 log1 INFO Test_login.py-48 line：用例的期望结果为：{"code":2,"msg":"密码格式为8到16位"}
+2022-02-28 00:38:19,795 log1 INFO Test_login.py-53 line：失败
+2022-02-28 00:38:19,795 log1 INFO Test_login.py-36 line：*********   执行用例8：不输入密码   *********
+2022-02-28 00:38:19,795 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:19,795 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:19,795 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:19,795 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:19,796 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '13300000001'}
+2022-02-28 00:38:19,876 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:19,876 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:19,876 log1 INFO Test_login.py-48 line：用例的期望结果为：{"code":1,"msg":"密码为空"}
+2022-02-28 00:38:19,877 log1 INFO Test_login.py-32 line：======  登录模块用例 执行结束  ========
+2022-02-28 00:38:19,877 log1 INFO Test_pay.py-52 line：======  充值模块用例 开始执行  ========
+2022-02-28 00:38:19,877 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:19,877 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:19,877 log1 INFO handle_requests.py-42 line：请求方法为：POST
+2022-02-28 00:38:19,877 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:19,877 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '17796415322', 'pwd': '123456789'}
+2022-02-28 00:38:20,055 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:20,055 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:20,055 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:20,055 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:20,055 log1 INFO handle_requests.py-42 line：请求方法为：POST
+2022-02-28 00:38:20,055 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:20,055 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '17796415322', 'pwd': '123456789'}
+2022-02-28 00:38:20,131 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:20,131 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 1200.0, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-02-28 00:43:50', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:20,131 log1 INFO Test_pay.py-70 line：*********   执行用例1：充值成功-整数   *********
+2022-02-28 00:38:20,209 log1 INFO Test_pay.py-79 line：充值前的用户余额：1200.00
+2022-02-28 00:38:20,209 log1 INFO Test_pay.py-82 line：充值的金额为：600
+2022-02-28 00:38:20,209 log1 INFO Test_pay.py-85 line：期望的充值之后的金额为：1800.0
+2022-02-28 00:38:20,209 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:20,209 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:20,210 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:20,210 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:20,210 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 600}
+2022-02-28 00:38:20,302 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:20,303 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 1800.0, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:20,303 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 1800.0}}
+2022-02-28 00:38:20,373 log1 INFO Test_pay.py-108 line：充值后的用户余额：1800.00
+2022-02-28 00:38:20,373 log1 INFO Test_pay.py-70 line：*********   执行用例2：充值成功-1位小数   *********
+2022-02-28 00:38:20,439 log1 INFO Test_pay.py-79 line：充值前的用户余额：1800.00
+2022-02-28 00:38:20,439 log1 INFO Test_pay.py-82 line：充值的金额为：600.1
+2022-02-28 00:38:20,440 log1 INFO Test_pay.py-85 line：期望的充值之后的金额为：2400.1
+2022-02-28 00:38:20,440 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:20,440 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:20,440 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:20,440 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:20,440 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 600.1}
+2022-02-28 00:38:20,528 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:20,528 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 2400.1, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:20,528 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 1800.0}}
+2022-02-28 00:38:20,529 log1 INFO Test_pay.py-70 line：*********   执行用例3：充值成功-2位小数   *********
+2022-02-28 00:38:20,602 log1 INFO Test_pay.py-79 line：充值前的用户余额：2400.10
+2022-02-28 00:38:20,603 log1 INFO Test_pay.py-82 line：充值的金额为：600.22
+2022-02-28 00:38:20,603 log1 INFO Test_pay.py-85 line：期望的充值之后的金额为：3000.32
+2022-02-28 00:38:20,603 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:20,603 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:20,603 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:20,603 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:20,603 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 600.22}
+2022-02-28 00:38:20,694 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:20,694 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 3000.32, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:20,694 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 2400.1}}
+2022-02-28 00:38:20,695 log1 INFO Test_pay.py-70 line：*********   执行用例4：充值成功-50万   *********
+2022-02-28 00:38:20,767 log1 INFO Test_pay.py-79 line：充值前的用户余额：3000.32
+2022-02-28 00:38:20,767 log1 INFO Test_pay.py-82 line：充值的金额为：500000
+2022-02-28 00:38:20,767 log1 INFO Test_pay.py-85 line：期望的充值之后的金额为：503000.32
+2022-02-28 00:38:20,767 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:20,767 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:20,767 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:20,767 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:20,767 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 500000}
+2022-02-28 00:38:20,850 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:20,850 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 503000.32, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:20,850 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 3000.32}}
+2022-02-28 00:38:20,851 log1 INFO Test_pay.py-70 line：*********   执行用例5：会员id为空   *********
+2022-02-28 00:38:20,851 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:20,851 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:20,851 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:20,851 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:20,851 log1 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2022-02-28 00:38:20,966 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:20,967 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '用户id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:20,967 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 1, 'msg': '用户id为空'}
+2022-02-28 00:38:20,967 log1 INFO Test_pay.py-70 line：*********   执行用例6：id不是当前登录的用户   *********
+2022-02-28 00:38:20,967 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:20,967 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:20,967 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:20,967 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:20,967 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 98989898, 'amount': 600}
+2022-02-28 00:38:21,053 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:21,053 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:21,054 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2022-02-28 00:38:21,054 log1 INFO Test_pay.py-70 line：*********   执行用例7：会员id为字符串   *********
+2022-02-28 00:38:21,054 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:21,054 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:21,054 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:21,054 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:21,054 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 'member_id', 'amount': 600}
+2022-02-28 00:38:21,128 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:21,128 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:21,129 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 2, 'msg': '数字格式化异常'}
+2022-02-28 00:38:21,129 log1 INFO Test_pay.py-70 line：*********   执行用例8：会员id为小数   *********
+2022-02-28 00:38:21,129 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:21,129 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:21,129 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:21,129 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:21,129 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2022-02-28 00:38:21,215 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:21,216 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:21,216 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 2, 'msg': '数字格式化异常'}
+2022-02-28 00:38:21,216 log1 INFO Test_pay.py-70 line：*********   执行用例9：充值金额为0   *********
+2022-02-28 00:38:21,216 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:21,216 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:21,216 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:21,216 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:21,216 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 0}
+2022-02-28 00:38:21,311 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:21,311 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 503000.32, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:21,311 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+2022-02-28 00:38:21,311 log1 INFO Test_pay.py-70 line：*********   执行用例10：充值金额为负数   *********
+2022-02-28 00:38:21,312 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:21,312 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:21,312 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:21,312 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:21,312 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': -600}
+2022-02-28 00:38:21,391 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:21,391 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:21,391 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+2022-02-28 00:38:21,391 log1 INFO Test_pay.py-70 line：*********   执行用例11：充值金额为空   *********
+2022-02-28 00:38:21,391 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:21,392 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:21,392 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:21,392 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:21,392 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854}
+2022-02-28 00:38:21,478 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:21,478 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:21,478 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 2, 'msg': '数字格式化异常'}
+2022-02-28 00:38:21,479 log1 INFO Test_pay.py-70 line：*********   执行用例12：充值金额-3位小数   *********
+2022-02-28 00:38:21,479 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:21,479 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:21,479 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:21,479 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:21,479 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 600.222}
+2022-02-28 00:38:21,563 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:21,563 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:21,563 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 2, 'msg': '余额小数超过两位'}
+2022-02-28 00:38:21,564 log1 INFO Test_pay.py-70 line：*********   执行用例13：充值金额-大于50万   *********
+2022-02-28 00:38:21,564 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:21,564 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:21,564 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:21,564 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:21,564 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 500001}
+2022-02-28 00:38:21,650 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:21,650 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:21,651 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+2022-02-28 00:38:21,651 log1 INFO Test_pay.py-70 line：*********   执行用例14：充值金额-非数字   *********
+2022-02-28 00:38:21,651 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:21,651 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjMwfQ.mmRA016yHY1JMM-by3LdwE-CXcZMDzJnX9X4l9a_if0JzAX0Vg1eUA5L0LHrdLjpBtrn3eZ-P5GZ6z-D6Wp4HQ'}
+2022-02-28 00:38:21,651 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:21,651 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/recharge
+2022-02-28 00:38:21,651 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': '5万'}
+2022-02-28 00:38:21,734 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:21,734 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数字格式化异常', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:21,735 log1 INFO Test_pay.py-95 line：期望结果是:{'code': 2, 'msg': '数字格式化异常'}
+2022-02-28 00:38:21,735 log1 INFO Test_pay.py-66 line：======  充值模块用例 执行结束  ========
+2022-02-28 00:38:21,735 log1 INFO Test_registe.py-35 line：======  注册模块用例 开始执行  ========
+2022-02-28 00:38:21,735 log1 INFO Test_registe.py-45 line：*********   执行用例1：注册成功-带注册名   *********
+2022-02-28 00:38:21,979 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:21,980 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:21,980 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:21,980 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:21,980 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '13734490946', 'pwd': '123456789', 'type': 1, 'reg_name': '美丽可爱的小简'}
+2022-02-28 00:38:22,114 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:22,114 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 34211927, 'reg_name': '美丽可爱的小简', 'mobile_phone': '13734490946'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:22,114 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":0,"msg":"OK"}
+2022-02-28 00:38:22,236 log1 INFO Test_registe.py-45 line：*********   执行用例2：成功-不带用户名   *********
+2022-02-28 00:38:22,499 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:22,499 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:22,499 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:22,500 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:22,500 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '13032732646', 'pwd': '123456789', 'type': 1}
+2022-02-28 00:38:22,633 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:22,633 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 34211928, 'reg_name': '小柠檬', 'mobile_phone': '13032732646'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:22,633 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":1,"msg":"手机号为空"}
+2022-02-28 00:38:22,634 log1 ERROR Test_registe.py-71 line：断言失败！
+>>>>>>> testing
 Traceback (most recent call last):
   File "C:\Users\Administrator\Desktop\api\TestCase\Test_registe.py", line 63, in test_register_ok
     self.assertEqual(response.json()["code"],expected["code"]) #断言响应code与期望code
@@ -5297,6 +5576,7 @@ Traceback (most recent call last):
   File "D:\python\lib\unittest\case.py", line 822, in _baseAssertEqual
     raise self.failureException(msg)
 AssertionError: 0 != 1
+<<<<<<< HEAD
 2022-02-28 00:26:05,017 log1 INFO Test_registe.py-45 line：*********   执行用例3：不输入手机号   *********
 2022-02-28 00:26:05,017 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
 2022-02-28 00:26:05,017 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
@@ -5498,3 +5778,282 @@ AssertionError: 0 != 1
 2022-02-28 00:26:07,762 log1 INFO handle_extract_data_from_response.py-28 line：设置环境变量.key:member_id,value:809759
 2022-02-28 00:26:07,762 log1 INFO handle_extract_data_from_response.py-28 line：设置环境变量.key:token,value:eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjgwOTc1OSwiZXhwIjoxNjQ1OTc5NDk4fQ.JBXgCHTtI3kCA-ng21avt8gBbsuOADX2PZaPkrZOD9jbtdJq-prJkhymlzICgiHk1sxzrf1bmrykR2DtHXPGaw
 2022-02-28 00:26:07,762 log1 INFO test_add.py-43 line：************** 加标接口 结束测试 ************
+=======
+2022-02-28 00:38:22,634 log1 INFO Test_registe.py-45 line：*********   执行用例3：不输入手机号   *********
+2022-02-28 00:38:22,634 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:22,634 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:22,635 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:22,635 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:22,635 log1 INFO handle_requests.py-44 line：请求数据为：{'pwd': '12345678', 'type': 1}
+2022-02-28 00:38:22,717 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:22,717 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:22,718 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":1,"msg":"手机号为空"}
+2022-02-28 00:38:22,718 log1 INFO Test_registe.py-45 line：*********   执行用例4：手机号长度10位   *********
+2022-02-28 00:38:22,718 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:22,718 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:22,718 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:22,718 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:22,719 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '1550000000', 'pwd': '12345678', 'type': 1}
+2022-02-28 00:38:22,799 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:22,799 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:22,800 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":2,"msg":"无效的手机格式"}
+2022-02-28 00:38:22,800 log1 INFO Test_registe.py-45 line：*********   执行用例5：手机号长度12位   *********
+2022-02-28 00:38:22,801 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:22,801 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:22,801 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:22,801 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:22,801 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '155000000001', 'pwd': '12345678', 'type': 1}
+2022-02-28 00:38:22,878 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:22,878 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:22,878 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":2,"msg":"无效的手机格式"}
+2022-02-28 00:38:22,878 log1 INFO Test_registe.py-45 line：*********   执行用例6：手机号含有非法字符   *********
+2022-02-28 00:38:22,878 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:22,879 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:22,879 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:22,879 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:22,879 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '1550000000q', 'pwd': '12345678', 'type': 1}
+2022-02-28 00:38:22,963 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:22,963 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:22,963 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":2,"msg":"无效的手机格式"}
+2022-02-28 00:38:22,964 log1 INFO Test_registe.py-45 line：*********   执行用例7：已注册过的手机号   *********
+2022-02-28 00:38:22,964 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:22,964 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:22,964 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:22,964 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:22,964 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '15500000000', 'pwd': '12345678', 'type': 1}
+2022-02-28 00:38:23,092 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:23,092 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:23,092 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":2,"msg":"账号已存在"}
+2022-02-28 00:38:23,092 log1 INFO Test_registe.py-45 line：*********   执行用例8：密码7位   *********
+2022-02-28 00:38:23,092 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:23,093 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:23,093 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:23,093 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:23,093 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '15500056781', 'pwd': '1234567', 'type': 1}
+2022-02-28 00:38:23,174 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:23,174 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:23,174 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":2,"msg":"密码格式为8到16位"}
+2022-02-28 00:38:23,174 log1 INFO Test_registe.py-45 line：*********   执行用例9：密码17位   *********
+2022-02-28 00:38:23,174 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:23,174 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:23,175 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:23,175 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:23,175 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '15500000001', 'pwd': '12345678901234567', 'type': 1}
+2022-02-28 00:38:23,252 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:23,252 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:23,252 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":2,"msg":"密码格式为8到16位"}
+2022-02-28 00:38:23,253 log1 INFO Test_registe.py-45 line：*********   执行用例10：不输入密码   *********
+2022-02-28 00:38:23,253 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:23,253 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:23,253 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:23,253 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:23,253 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '13300000001', 'type': 1}
+2022-02-28 00:38:23,326 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:23,326 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:23,326 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":1,"msg":"密码为空"}
+2022-02-28 00:38:23,327 log1 INFO Test_registe.py-45 line：*********   执行用例11：注册名11位   *********
+2022-02-28 00:38:23,327 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:23,327 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:23,327 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:23,327 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:23,327 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '13303007856', 'pwd': '12345678', 'type': 1, 'reg_name': '12345678909991'}
+2022-02-28 00:38:23,402 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:23,402 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '用户昵称长度超过10位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:23,402 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":2,"msg":"用户昵称长度超过10位"}
+2022-02-28 00:38:23,402 log1 INFO Test_registe.py-45 line：*********   执行用例12：类型输入非0，1内容   *********
+2022-02-28 00:38:23,402 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:23,403 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:23,403 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:23,403 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:23,403 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '13300003456', 'pwd': '12345678', 'type': 2}
+2022-02-28 00:38:23,480 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:23,480 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '不支持的用户类型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:23,480 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":2,"msg":"不支持的用户类型"}
+2022-02-28 00:38:23,481 log1 INFO Test_registe.py-45 line：*********   执行用例13：不输入类型   *********
+2022-02-28 00:38:23,743 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:23,743 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:23,743 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:23,743 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:23,743 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '18658258452', 'pwd': '12345678'}
+2022-02-28 00:38:23,870 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:23,871 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 34211929, 'reg_name': '小柠檬', 'mobile_phone': '18658258452'}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:23,871 log1 INFO Test_registe.py-61 line：用例的期望结果为：{"code":0,"msg":"OK"}
+2022-02-28 00:38:23,989 log1 INFO Test_registe.py-39 line：======  注册模块用例 执行结束  ========
+2022-02-28 00:38:23,989 log1 INFO Test_withdraw.py-47 line：======  提现模块用例 开始执行  ========
+2022-02-28 00:38:23,989 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:23,990 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:23,990 log1 INFO handle_requests.py-42 line：请求方法为：POST
+2022-02-28 00:38:23,990 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/register
+2022-02-28 00:38:23,990 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '17796415322', 'pwd': '123456789'}
+2022-02-28 00:38:24,113 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:24,113 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:24,113 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:24,113 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:24,114 log1 INFO handle_requests.py-42 line：请求方法为：POST
+2022-02-28 00:38:24,114 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/login
+2022-02-28 00:38:24,114 log1 INFO handle_requests.py-44 line：请求数据为：{'mobile_phone': '17796415322', 'pwd': '123456789'}
+2022-02-28 00:38:24,241 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:24,242 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 503000.32, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2022-02-28 00:43:55', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:24,242 log1 INFO Test_withdraw.py-62 line：*********   执行用例1：提现成功-整数   *********
+2022-02-28 00:38:24,314 log1 INFO Test_withdraw.py-70 line：提现前的用户余额：503000.32
+2022-02-28 00:38:24,314 log1 INFO Test_withdraw.py-73 line：提现的金额为：600
+2022-02-28 00:38:24,314 log1 INFO Test_withdraw.py-76 line：期望的提现之后的金额为：502400.32
+2022-02-28 00:38:24,314 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:24,314 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:24,314 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:24,314 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:24,314 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 600}
+2022-02-28 00:38:24,402 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:24,402 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 502400.32, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:24,403 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 502400.32}}
+2022-02-28 00:38:24,477 log1 INFO Test_withdraw.py-96 line：提现后的用户余额：502400.32
+2022-02-28 00:38:24,477 log1 INFO Test_withdraw.py-62 line：*********   执行用例2：提现成功-1位小数   *********
+2022-02-28 00:38:24,546 log1 INFO Test_withdraw.py-70 line：提现前的用户余额：502400.32
+2022-02-28 00:38:24,546 log1 INFO Test_withdraw.py-73 line：提现的金额为：600.1
+2022-02-28 00:38:24,546 log1 INFO Test_withdraw.py-76 line：期望的提现之后的金额为：501800.22
+2022-02-28 00:38:24,546 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:24,546 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:24,547 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:24,547 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:24,547 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 600.1}
+2022-02-28 00:38:24,632 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:24,632 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 501800.22, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:24,633 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 501800.22}}
+2022-02-28 00:38:24,705 log1 INFO Test_withdraw.py-96 line：提现后的用户余额：501800.22
+2022-02-28 00:38:24,706 log1 INFO Test_withdraw.py-62 line：*********   执行用例3：提现成功-2位小数   *********
+2022-02-28 00:38:24,774 log1 INFO Test_withdraw.py-70 line：提现前的用户余额：501800.22
+2022-02-28 00:38:24,774 log1 INFO Test_withdraw.py-73 line：提现的金额为：600.22
+2022-02-28 00:38:24,774 log1 INFO Test_withdraw.py-76 line：期望的提现之后的金额为：501200.0
+2022-02-28 00:38:24,775 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:24,775 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:24,775 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:24,775 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:24,775 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 600.22}
+2022-02-28 00:38:24,861 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:24,862 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 501200.0, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:24,862 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 501200.0}}
+2022-02-28 00:38:24,934 log1 INFO Test_withdraw.py-96 line：提现后的用户余额：501200.00
+2022-02-28 00:38:24,934 log1 INFO Test_withdraw.py-62 line：*********   执行用例4：提现成功-50万   *********
+2022-02-28 00:38:25,005 log1 INFO Test_withdraw.py-70 line：提现前的用户余额：501200.00
+2022-02-28 00:38:25,005 log1 INFO Test_withdraw.py-73 line：提现的金额为：500000
+2022-02-28 00:38:25,005 log1 INFO Test_withdraw.py-76 line：期望的提现之后的金额为：1200.0
+2022-02-28 00:38:25,005 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,005 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,005 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,005 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,006 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 500000}
+2022-02-28 00:38:25,094 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:25,094 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 1200.0, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:25,094 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 1200.0}}
+2022-02-28 00:38:25,168 log1 INFO Test_withdraw.py-96 line：提现后的用户余额：1200.00
+2022-02-28 00:38:25,168 log1 INFO Test_withdraw.py-62 line：*********   执行用例5：会员id为空   *********
+2022-02-28 00:38:25,168 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,169 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,169 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,169 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,169 log1 INFO handle_requests.py-44 line：请求数据为：{'amount': 600}
+2022-02-28 00:38:25,249 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:25,249 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '会员id为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:25,249 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 1, 'msg': '会员id为空'}
+2022-02-28 00:38:25,250 log1 INFO Test_withdraw.py-62 line：*********   执行用例6：id不是当前登录的用户   *********
+2022-02-28 00:38:25,250 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,250 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,250 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,250 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,250 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 98989898, 'amount': 600}
+2022-02-28 00:38:25,336 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:25,337 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '会员不存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:25,337 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 1007, 'msg': '无权限访问，请检查参数'}
+2022-02-28 00:38:25,337 log1 INFO Test_withdraw.py-62 line：*********   执行用例7：会员id为字符串   *********
+2022-02-28 00:38:25,337 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,338 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,338 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,338 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,338 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': '900854', 'amount': 600}
+2022-02-28 00:38:25,424 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:25,424 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 600.0, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:25,425 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 2, 'msg': '数字格式化异常'}
+2022-02-28 00:38:25,425 log1 INFO Test_withdraw.py-62 line：*********   执行用例8：会员id为小数   *********
+2022-02-28 00:38:25,425 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,426 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,426 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,426 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,426 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 15.0, 'amount': 600}
+2022-02-28 00:38:25,505 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:25,505 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:25,506 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 2, 'msg': '数值参数格式不正确'}
+2022-02-28 00:38:25,506 log1 INFO Test_withdraw.py-62 line：*********   执行用例9：充值金额为0   *********
+2022-02-28 00:38:25,506 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,506 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,506 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,506 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,506 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 0}
+2022-02-28 00:38:25,598 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:25,598 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 0, 'msg': 'OK', 'data': {'id': 900854, 'leave_amount': 600.0, 'mobile_phone': '17796415322', 'reg_name': '小柠檬', 'reg_time': '2022-02-27 17:45:28.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:25,598 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 2, 'msg': '金额必须大于0并且小于或者等于500000'}
+2022-02-28 00:38:25,599 log1 INFO Test_withdraw.py-62 line：*********   执行用例10：充值金额为负数   *********
+2022-02-28 00:38:25,599 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,599 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,599 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,599 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,599 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': -600}
+2022-02-28 00:38:25,681 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:25,682 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:25,682 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2022-02-28 00:38:25,682 log1 INFO Test_withdraw.py-62 line：*********   执行用例11：充值金额为空   *********
+2022-02-28 00:38:25,682 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,683 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,683 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,683 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,683 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854}
+2022-02-28 00:38:25,772 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:25,772 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1, 'msg': '余额为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:25,772 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 1, 'msg': '余额为空'}
+2022-02-28 00:38:25,773 log1 INFO Test_withdraw.py-62 line：*********   执行用例12：充值金额-3位小数   *********
+2022-02-28 00:38:25,773 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,773 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,773 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,773 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,773 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 600.222}
+2022-02-28 00:38:25,852 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:25,852 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:25,852 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 2, 'msg': '余额小数超过两位'}
+2022-02-28 00:38:25,853 log1 INFO Test_withdraw.py-62 line：*********   执行用例13：充值金额-大于50万   *********
+2022-02-28 00:38:25,853 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,853 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,853 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,853 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,853 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': 500001}
+2022-02-28 00:38:25,937 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:25,937 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:25,938 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000'}
+2022-02-28 00:38:25,938 log1 INFO Test_withdraw.py-62 line：*********   执行用例14：充值金额-非数字   *********
+2022-02-28 00:38:25,938 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:25,938 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjkwMDg1NCwiZXhwIjoxNjQ1OTgwMjM1fQ.lHN4NRRw1Amh27RCPyGjfMDIgXi3viUf58O5-c7iwj6YsHIYbEfvNnwaY0xb4uyWEt_3KtwuTzVE_yd8eGOfZQ'}
+2022-02-28 00:38:25,938 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:25,938 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/member/withdraw
+2022-02-28 00:38:25,938 log1 INFO handle_requests.py-44 line：请求数据为：{'member_id': 900854, 'amount': '5万'}
+2022-02-28 00:38:26,025 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:26,025 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 2, 'msg': '数值参数格式不正确', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2022-02-28 00:38:26,025 log1 INFO Test_withdraw.py-85 line：期望结果是:{'code': 2, 'msg': '数值参数格式不正确'}
+2022-02-28 00:38:26,025 log1 INFO Test_withdraw.py-58 line：======  提现模块用例 执行结束  ========
+2022-02-28 00:38:26,025 log1 INFO test_add.py-36 line：************** 加标接口 开始测试 ************
+2022-02-28 00:38:26,026 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,027 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,027 log1 INFO handle_requests.py-41 line：请求头为：{'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'}
+2022-02-28 00:38:26,027 log1 INFO handle_requests.py-42 line：请求方法为：post
+2022-02-28 00:38:26,027 log1 INFO handle_requests.py-43 line：请求url为：http://api.lemonban.com/futureloan/loan/add
+2022-02-28 00:38:26,027 log1 INFO handle_requests.py-44 line：请求数据为：{'title': '借钱实现财富自由', 'amount': 2000, 'loan_rate': 12.0, 'loan_term': 3, 'loan_date_type': 1, 'bidding_days': 5}
+2022-02-28 00:38:26,113 log1 INFO handle_requests.py-51 line：响应状态码为：200
+2022-02-28 00:38:26,114 log1 INFO handle_requests.py-52 line：响应数据为：{'code': 1003, 'copyright': 'Copyright 柠檬班 © 2017-2019 湖南省零檬信息技术有限公司 All Rights Reserved', 'msg': '未授权或token已过期'}
+2022-02-28 00:38:26,114 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,115 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,116 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,116 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,117 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,117 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,118 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,119 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,119 log1 INFO handle_requests.py-33 line：发起一次HTTP请求
+2022-02-28 00:38:26,120 log1 INFO test_add.py-43 line：************** 加标接口 结束测试 ************
+>>>>>>> testing
